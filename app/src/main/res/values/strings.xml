@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">Pattern</string>
+    <string name="app_name">youCounter</string>
+    <string name="settingPageTitle">Настройки</string>
+    <string name="start">Начать</string>
+    <string name="continuePhrase">Далее</string>
+    <string name="add">Добавить</string>
+    <string name="steps">Ходьба</string>
+    <string name="stepsType">шагов</string>
+    <string name="cal">Калории</string>
+    <string name="calType">ккал</string>
+    <string name="water">Вода</string>
+    <string name="waterType">мл</string>
+    <string name="sleep">Сон</string>
+    <string name="sleepType">часов</string>
+    <string name="weightType">кг</string>
+    <string name="heigthType">см</string>
+    <string name="lengthStepType">cм</string>
+    <string name="ageType">лет</string>
+    <string name="bestResult">Лучший результат</string>
+    <string name="intoWelcome">Добро пожаловать</string>
+    <string name="inputFieldHint">Введите значение</string>
+    <string name="introText">Приложение youCounter поможет Вам следить за своим здоровьем</string>
+
 </resources>

@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.putkovdimi.pattern">
+    package="org.youcounter.youcounter">
 
     <application
+        android:name=".presentation.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name="org.youcounter.youcounter.presentation.activities.main.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="org.youcounter.youcounter.presentation.activities.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".presentation.activities.information.InformationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".presentation.activities.intro.IntroActivity" />
+
+        <service
+            android:name=".domain.StepsService"
+            android:enabled="true" />
     </application>
 
 </manifest>

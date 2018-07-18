@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuHandler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/pop_up_menu_handler"
+    android:elevation="10dp"
+    android:layout_marginTop="10dp">
+    <View
+        android:layout_width="26dp"
+        android:layout_height="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_menu_swiper"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/menuOption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addItemOptionSteps"
+                style="@style/addItemOptionActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_additem_option_active"
+                android:clickable="true"
+                android:text="Ходьба"
+                android:focusable="true" />
+
+
+            <TextView
+                android:id="@+id/addItemOptionCal"
+                style="@style/addItemOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_additem_option"
+                android:clickable="true"
+                android:text="Калории"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/addItemOptionWater"
+                style="@style/addItemOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_additem_option"
+                android:clickable="true"
+                android:text="Вода"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/additem_handler">
+
+            <EditText
+                android:id="@+id/addItemInputField"
+                style="@style/inputFiled"
+                android:layout_width="1dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputFieldHint"
+                android:maxEms="5"
+                android:inputType="number"
+                android:maxLength="5" />
+
+            <Button
+                android:id="@+id/addItemSendButton"
+                style="@style/SecondaryButton"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_additem_button"
+                android:text="Добавить" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

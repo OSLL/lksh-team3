@@ -1,11 +1,85 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">#0000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="inputFiled" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="android:background">#0000</item>
+    </style>
+
+    <style name="menuOption" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+    
+    <style name="textInGraph" parent="Base.Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="goalInGraph" parent="Base.Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorGrayLight</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="menuOptionActive" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+
+    <style name="addItemOption" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="addItemOptionActive" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="title" parent="Base.Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:paddingStart">0dp</item>
+    </style>
+
+    <style name="subtitle" parent="Base.Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">0dp</item>
     </style>
 
 </resources>

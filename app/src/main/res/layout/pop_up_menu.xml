@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuHandler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:elevation="10dp"
+    android:background="@drawable/pop_up_menu_handler"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="26dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_menu_swiper"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/menuOption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/menuOptionActive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_menu_option_active"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Главная"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:id="@+id/settingsMenuOption"
+            style="@style/menuOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_menu_option_selector"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:text="@string/settingPageTitle" />
+
+    </LinearLayout>
+</LinearLayout>

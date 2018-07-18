@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/settingsReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#ffffff"
+            android:paddingStart="14dp"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/settingPageTitle" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGrayLightRipple" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="14dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Личные данные" />
+
+            <include
+                android:id="@+id/age"
+                layout="@layout/layout_settings_item" />
+
+            <include
+                android:id="@+id/height"
+                layout="@layout/layout_settings_item" />
+
+            <include
+                android:id="@+id/step"
+                layout="@layout/layout_settings_item" />
+
+            <include
+                android:id="@+id/weight"
+                layout="@layout/layout_settings_item" />
+            <include
+                android:id="@+id/glass"
+                layout="@layout/layout_settings_item" />
+            <include
+                android:id="@+id/stepsTarget"
+                layout="@layout/layout_settings_item" />
+            <include
+                android:id="@+id/waterTarget"
+                layout="@layout/layout_settings_item" />
+            <include
+                android:id="@+id/caloriesTarget"
+                layout="@layout/layout_settings_item" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
